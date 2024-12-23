@@ -1,0 +1,22 @@
+[
+{
+    "traffic_id": "1",
+    "traffic": "Heavy traffic"
+},
+{
+    "traffic_id": "2",
+    "traffic": "Moderate traffic"
+},
+{
+    "traffic_id": "3",
+    "traffic": "Light traffic"
+},
+{
+    "traffic_id": "4",
+    "traffic": "No traffic"
+},
+{
+    "traffic_id": "5",
+    "traffic": "Traffic jam"
+}
+]

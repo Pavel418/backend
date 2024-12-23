@@ -1,0 +1,5 @@
+[Experience](Traveled during)[Weather]
+[Experience](Riding on)[Road]
+[Experience](Guided by)[Navigation]
+[Experience](Occurs through)[Traffic]
+[Experience](Performs)[Maneuver]

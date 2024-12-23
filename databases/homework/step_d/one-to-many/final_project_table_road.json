@@ -1,0 +1,22 @@
+[
+{
+    "road_id": "1",
+    "road": "Highway A"
+},
+{
+    "road_id": "2",
+    "road": "Main Street"
+},
+{
+    "road_id": "3",
+    "road": "Country Road"
+},
+{
+    "road_id": "4",
+    "road": "Interstate 95"
+},
+{
+    "road_id": "5",
+    "road": "Parkway B"
+}
+]

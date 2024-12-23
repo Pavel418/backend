@@ -1,0 +1,153 @@
+[{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f258"
+  },
+  "customer_id": 1,
+  "date": "2019-01-02",
+  "quantity": 3,
+  "product_id": 3
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f259"
+  },
+  "customer_id": 1,
+  "date": "2019-01-18",
+  "quantity": 5,
+  "product_id": 4
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f25a"
+  },
+  "customer_id": 2,
+  "date": "2019-01-24",
+  "quantity": 5,
+  "product_id": 1
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f25b"
+  },
+  "customer_id": 2,
+  "date": "2019-01-06",
+  "quantity": 4,
+  "product_id": 2
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f25c"
+  },
+  "customer_id": 2,
+  "date": "2019-01-16",
+  "quantity": 6,
+  "product_id": 3
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f25d"
+  },
+  "customer_id": 4,
+  "date": "2019-01-20",
+  "quantity": 3,
+  "product_id": 1
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f25e"
+  },
+  "customer_id": 6,
+  "date": "2019-01-15",
+  "quantity": 3,
+  "product_id": 4
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f25f"
+  },
+  "customer_id": 7,
+  "date": "2019-01-07",
+  "quantity": 2,
+  "product_id": 1
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f260"
+  },
+  "customer_id": 7,
+  "date": "2019-01-08",
+  "quantity": 5,
+  "product_id": 3
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f261"
+  },
+  "customer_id": 8,
+  "date": "2019-01-11",
+  "quantity": 5,
+  "product_id": 2
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f262"
+  },
+  "customer_id": 8,
+  "date": "2019-01-03",
+  "quantity": 3,
+  "product_id": 3
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f263"
+  },
+  "customer_id": 8,
+  "date": "2019-01-01",
+  "quantity": 5,
+  "product_id": 4
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f264"
+  },
+  "customer_id": 9,
+  "date": "2019-01-17",
+  "quantity": 6,
+  "product_id": 1
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f265"
+  },
+  "customer_id": 9,
+  "date": "2019-01-16",
+  "quantity": 6,
+  "product_id": 3
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f266"
+  },
+  "customer_id": 9,
+  "date": "2019-01-15",
+  "quantity": 3,
+  "product_id": 4
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f267"
+  },
+  "customer_id": 10,
+  "date": "2019-01-19",
+  "quantity": 5,
+  "product_id": 1
+},
+{
+  "_id": {
+    "$oid": "65bd58e9b160156bd9b9f268"
+  },
+  "customer_id": 10,
+  "date": "2019-01-26",
+  "quantity": 4,
+  "product_id": 4
+}]

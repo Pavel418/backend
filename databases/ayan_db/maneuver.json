@@ -1,0 +1,8 @@
+[
+    {"maneuver_id":"1","maneuver_name":"Lane Change"},
+    {"maneuver_id":"2","maneuver_name":"Turn Left"},
+    {"maneuver_id":"3","maneuver_name":"Turn Right"},
+    {"maneuver_id":"4","maneuver_name":"U-turn"},
+    {"maneuver_id":"5","maneuver_name":"Merge"}
+]
+    

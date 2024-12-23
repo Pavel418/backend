@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "65bd59416216d3277adfb684"
+  },
+  "product_id": 1,
+  "product": "Ink cartridge",
+  "price": 12
+},
+{
+  "_id": {
+    "$oid": "65bd59416216d3277adfb685"
+  },
+  "product_id": 2,
+  "product": "Memory stick 64Gb",
+  "price": 9
+},
+{
+  "_id": {
+    "$oid": "65bd59416216d3277adfb686"
+  },
+  "product_id": 3,
+  "product": "Cabling and connectors",
+  "price": 5
+},
+{
+  "_id": {
+    "$oid": "65bd59416216d3277adfb687"
+  },
+  "product_id": 4,
+  "product": "Pack of 50 CDs to burn",
+  "price": 22
+},
+{
+  "_id": {
+    "$oid": "65bd59416216d3277adfb688"
+  },
+  "product_id": 5,
+  "product": "Bluetooth mouse and keyboard",
+  "price": 37
+}]

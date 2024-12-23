@@ -1,0 +1,19 @@
+Experience (PK:experience_id, date, departure_time, arrival_time, distance, FK:navigation_id)
+
+Experience_Traffic (FK:experience_id, FK:traffic_id)
+
+Traffic (PK:traffic_id, traffic)
+
+Experience_Weather (FK:experience_id, FK:weather_id)
+
+Weather (PK:weather_id, weather)
+
+Experience_Road (FK:experience_id, FK:road_id)
+
+Road (PK:road_id, road)
+
+Experience_Maneuver (FK:experience_id, FK:maneuver_id)
+
+Maneuver (PK:maneuver_id, maneuver)
+
+Navigation (PK:navigation_id, navigation)

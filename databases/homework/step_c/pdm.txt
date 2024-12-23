@@ -1,0 +1,14 @@
+[Experience,PK:experience_id](110<)[Experience_Traffic,FK:experience_id,FK:traffic_id]
+[Experience_Traffic,FK:experience_id,FK:traffic_id](>111)[Traffic,PK:traffic_id]
+
+[Experience,PK:experience_id](110<)[Experience_Weather,FK:experience_id,FK:weather_id]
+[Experience_Weather,FK:experience_id,FK:weather_id](>111)[Weather,PK:weather_id]
+
+[Experience,PK:experience_id](110<)[Experience_Road,FK:experience_id,FK:doad_id]
+[Experience_Road,FK:experience_id,FK:doad_id](>111)[Road,PK:doad_id]
+
+[Experience,PK:experience_id](110<)[Experience_Maneuver,FK:experience_id,FK:maneuver_id]
+[Experience_Maneuver,FK:experience_id,FK:maneuver_id](>101)[Maneuver,PK:maneuver_id]
+
+[Experience,PK:experience_id,FK:navigation_id](>011)[Navigation,PK:navigation_id]
+

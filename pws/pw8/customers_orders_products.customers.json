@@ -1,0 +1,100 @@
+[{
+  "_id": {
+    "$oid": "65bd5591b160156bd9b9f220"
+  },
+  "customer_id": 1,
+  "first_name": "Delly",
+  "last_name": "Walford",
+  "email": "dwalford0@google.com",
+  "gender": "Female"
+},
+{
+  "_id": {
+    "$oid": "65bd5591b160156bd9b9f221"
+  },
+  "customer_id": 2,
+  "first_name": "Regan",
+  "last_name": "Brickwood",
+  "email": "rbrickwood1@opensource.org",
+  "gender": "Male"
+},
+{
+  "_id": {
+    "$oid": "65bd5591b160156bd9b9f222"
+  },
+  "customer_id": 3,
+  "first_name": "Lemar",
+  "last_name": "Castri",
+  "email": "lcastri2@cdbaby.com",
+  "gender": "Male"
+},
+{
+  "_id": {
+    "$oid": "65bd5591b160156bd9b9f223"
+  },
+  "customer_id": 4,
+  "first_name": "Sergei",
+  "last_name": "Dowson",
+  "email": "sdowson3@marriott.com",
+  "gender": "Male"
+},
+{
+  "_id": {
+    "$oid": "65bd5591b160156bd9b9f224"
+  },
+  "customer_id": 5,
+  "first_name": "Roberto",
+  "last_name": "Marson",
+  "email": "rmarson4@google.ca",
+  "gender": "Male"
+},
+{
+  "_id": {
+    "$oid": "65bd5591b160156bd9b9f225"
+  },
+  "customer_id": 6,
+  "first_name": "Rip",
+  "last_name": "Alman",
+  "email": "ralman5@japanpost.jp",
+  "gender": "Male"
+},
+{
+  "_id": {
+    "$oid": "65bd5591b160156bd9b9f226"
+  },
+  "customer_id": 7,
+  "first_name": "Faber",
+  "last_name": "Dawber",
+  "email": "fdawber6@nsw.gov.au",
+  "gender": "Male"
+},
+{
+  "_id": {
+    "$oid": "65bd5591b160156bd9b9f227"
+  },
+  "customer_id": 8,
+  "first_name": "Ham",
+  "last_name": "Harrisson",
+  "email": "hharrisson7@dot.gov",
+  "gender": "Male"
+},
+{
+  "_id": {
+    "$oid": "65bd5591b160156bd9b9f228"
+  },
+  "customer_id": 9,
+  "first_name": "Al",
+  "last_name": "Ormerod",
+  "email": "aormerod8@ameblo.jp",
+  "gender": "Male"
+},
+{
+  "_id": {
+    "$oid": "65bd5591b160156bd9b9f229"
+  },
+  "customer_id": 10,
+  "first_name": "Giralda",
+  "last_name": "Gogay",
+  "email": "ggogay9@cdc.gov",
+  "gender": "Female"
+}]

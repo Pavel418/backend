@@ -1,0 +1,6 @@
+[Weather](weather_id, weather)<TINYINT, VARCHAR20>
+[Road](road_id, road)<TINYINT, VARCHAR20>
+[Navigation](navigation_id, navigation)<TINYINT, VARCHAR20>
+[Traffic](traffic_id, traffic)<TINYINT, VARCHAR20>
+[Maneuver](maneuver_id, maneuver)<TINYINT, VARCHAR20>
+[Experience](experience_id, date, departure_time, arrival_time, distance)<INT, DATE, TIME, TIME, FLOAT>

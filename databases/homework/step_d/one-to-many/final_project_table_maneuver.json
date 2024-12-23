@@ -1,0 +1,22 @@
+[
+{
+    "maneuver": "J-Turn",
+    "maneuver_id": "1"
+},
+{
+    "maneuver": "Hook Turn",
+    "maneuver_id": "2"
+},
+{
+    "maneuver": "Box Turn",
+    "maneuver_id": "3"
+},
+{
+    "maneuver": "Controlled Skid",
+    "maneuver_id": "4"
+},
+{
+    "maneuver": "Reverse Flick",
+    "maneuver_id": "5"
+}
+]

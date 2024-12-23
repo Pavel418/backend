@@ -1,0 +1,7 @@
+[
+    {"weather_id":"1","weather":"Sunny"},
+    {"weather_id":"2","weather":"Cloudy"},
+    {"weather_id":"3","weather":"Rainy"},
+    {"weather_id":"4","weather":"Snowy"},
+    {"weather_id":"5","weather":"Foggy"}
+]

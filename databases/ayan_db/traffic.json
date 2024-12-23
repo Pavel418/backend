@@ -1,0 +1,7 @@
+[
+    {"traffic_id":"1","traffic_type":"Low"},
+    {"traffic_id":"2","traffic_type":"Moderate"},
+    {"traffic_id":"3","traffic_type":"High"},
+    {"traffic_id":"4","traffic_type":"Very High"},
+    {"traffic_id":"5","traffic_type":"Standstill"}
+]

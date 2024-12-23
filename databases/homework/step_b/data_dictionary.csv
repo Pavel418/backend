@@ -1,0 +1,26 @@
+Weather,,,
+weather_id,Unique identifier for the weather,TINYINT,"3 digits, 1 bytes"
+weather,The weather during the ride,VARCHAR,20
+,,,
+Road,,,
+road_id,Unique identifier for the road,TINYINT,"3 digits, 1 bytes"
+road,The state of the road where the ride took place,VARCHAR,20
+,,,
+Navigation,,,
+navigation_id,Unique identifier for the navigation,TINYINT,"3 digits, 1 bytes"
+navigation,The type of the navigation used during the ride,VARCHAR,20
+,,,
+Traffic,,,
+traffic_id,Unique identifier for the traffic,TINYINT,"3 digits, 1 bytes"
+traffic,The intensity of the traffic during the ride,VARCHAR,20
+,,,
+Maneuver,,,
+maneuver_id,Unique identifier for the maneuver,INYINT,"3 digits, 1 bytes"
+maneuver,The type of the maneuver done,VARCHAR,20
+,,,
+Experience,,,
+experience_id,Unique identifier for the experience,INT,"11 digits, 4 bytes"
+date,The date of the drive,DATE,"YYYY-MM-DD, 3 bytes"
+departure_time,The departure time of the drive,TIME,"hh:mm:ss, 3 bytes"
+arrival_time,The arrival time of the drive,TIME,"hh:mm:ss, 3 bytes"
+distance,The distance in km,FLOAT,"11 digits, 4 bytes"

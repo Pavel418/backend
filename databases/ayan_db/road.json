@@ -1,0 +1,7 @@
+[
+    {"road_id":"1","road_type":"Highway"},
+    {"road_id":"2","road_type":"Urban Road"},
+    {"road_id":"3","road_type":"Rural Road"},
+    {"road_id":"4","road_type":"Expressway"},
+    {"road_id":"5","road_type":"City Street"}
+]
