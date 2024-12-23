@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chartjs-chart-matrix"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-chart-matrix"></script>
 </head>
 <body>
     <header class="header">
@@ -40,12 +40,14 @@
             </tbody>
         </table>
 
-        <canvas id="navigationChart" width="400" height="200"></canvas>
-        <canvas id="trafficChart" width="400" height="200"></canvas>
-        <canvas id="weatherChart" width="400" height="200"></canvas>
-        <canvas id="roadChart" width="400" height="200"></canvas>
-        <canvas id="distanceChart" width="400" height="200"></canvas>
-        <canvas id="heatmapChart" width="400" height="200"></canvas>
+        <!-- <div class="chart-container">
+            <canvas id="navigationChart"></canvas>
+            <canvas id="trafficChart"></canvas>
+            <canvas id="weatherChart"></canvas>
+            <canvas id="roadChart"></canvas>
+            <canvas id="distanceChart"></canvas>
+            <canvas id="heatmapChart"></canvas>
+        </div> -->
 
         <button id="empty" onclick="window.location='/dashboard/reset';">Empty the storage</button>
     </div>
@@ -54,6 +56,12 @@
 </html>
 
 <script src="/js/graphs.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#experience-table').DataTable();
+    });
+</script>
 
 <?php
 function getOptionName($options, $experience, $key) {
