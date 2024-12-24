@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Driving Experience</title>
-    <link rel="stylesheet" type="text/css" href="/css/form.css">
+    <link rel="stylesheet" type="text/css" href="/css/entry.css">
 </head>
 
 <body>
@@ -88,10 +88,10 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2024 Skibidi Sigma</p>
+        <p>&copy; 2024 Skibidi Ayan</p>
     </footer>
 
-    <script src="/js/form.js"></script>
+    <script src="/js/entry.js"></script>
     <script src="/js/edit.js"></script>
 </body>
 </html>

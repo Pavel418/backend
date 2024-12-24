@@ -12,7 +12,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2e004f;
+    background-color: #e92fe6;
     background-image: url('../images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,14 +29,14 @@ main {
 }
 
 .header {
-    background: linear-gradient(90deg, #1e0342, #3d1e6d);
+    background: linear-gradient(90deg, #420342, #6d1e68);
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
 }
 
 .footer {
-    background: linear-gradient(90deg, #1e0342, #3d1e6d);
+    background: linear-gradient(90deg, #390342, #691e6d);
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
@@ -44,7 +44,7 @@ main {
 
 a {
     text-decoration: none;
-    background-color: #2e004f;
+    background-color: #4f0045;
     color: #fff;
     padding: 20px 40px;
     border: none;
@@ -71,7 +71,7 @@ button {
     display: block;
     margin: 40px auto;
     padding: 10px 20px;
-    background-color: #2e004f;
+    background-color: #4f004f;
     color: #fff;
     border: none;
     cursor: pointer;

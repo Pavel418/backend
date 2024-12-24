@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Driving Experience</title>
-    <link rel="stylesheet" type="text/css" href="/css/form.css">
+    <link rel="stylesheet" type="text/css" href="/css/entry.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         }
         ?>
 
-        <form class="form-container" action="/form" method="POST" id="driving-form">
+        <form class="form-container" action="/entry" method="POST" id="driving-form">
             <label class="form-label" for="date">Date:</label>
             <input type="date" id="date" name="date" class="form-input" required>
             <div class="error-message" id="date-error">Please select a valid date.</div><br>
@@ -69,7 +69,7 @@
             </select>
             <div class="error-message" id="navigation-type-error">Please select a navigation type.</div><br>
 
-            <label class="form-label" for="maneuver-group">Maneuvers:</label>
+            <legend class="form-label">Maneuvers:</legend>
             <div id="maneuver-group">
                 <?php foreach ($maneuverOptions as $index => $maneuver) { ?>
                     <?php $inputId = "maneuver_" . $index; ?>
@@ -81,7 +81,7 @@
 
 
             <input type="submit" class="form-submit" value="Submit">
-            <a href="/dashboard">Summary</a>
+            <a href="/summary">Summary</a>
             <a href="/">Back</a>
         </form>
 
@@ -89,7 +89,7 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2024 Skibidi Sigma</p>
+        <p>&copy; 2024 Skibidi Ayan</p>
     </footer>
 
     <script src="/js/form.js"></script>

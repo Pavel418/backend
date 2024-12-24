@@ -69,7 +69,7 @@
             </select>
             <div class="error-message" id="navigation-type-error">Please select a navigation type.</div><br>
 
-            <label class="form-label" for="maneuver-group">Maneuvers:</label>
+            <legend class="form-label">Maneuvers:</legend>
             <div id="maneuver-group">
                 <?php foreach ($maneuverOptions as $index => $maneuver) { ?>
                     <?php $inputId = "maneuver_" . $index; ?>

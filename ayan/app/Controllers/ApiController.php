@@ -8,7 +8,7 @@ use App\Models\Road;
 use App\Models\Traffic;
 use App\Models\Weather;
 
-class ExperienceController
+class ApiController
 {
     protected $experienceModel;
     protected $navigationModel;

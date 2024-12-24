@@ -41,6 +41,7 @@ class DashboardController {
         foreach ($experiences as $key => $experience) {
             $experienceCode = $this->generateCode();
             $_SESSION['experience_ids'][$experienceCode] = $experience['experience_id'];
+            $experiences[$key]['temp'] = $experience['experience_id'];
             $experiences[$key]['experience_id'] = $experienceCode;
 
             foreach (['weather_id', 'road_id', 'traffic_id', 'navigation_id'] as $field) {

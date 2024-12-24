@@ -16,7 +16,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2e004f;
+    background-color: #76094c;
     background-image: url('../images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,14 +24,14 @@ body {
 }
 
 .header {
-    background: linear-gradient(90deg, #1e0342, #3d1e6d);
+    background: linear-gradient(90deg, #810877, #9c2d7d);
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
 }
 
 .footer {
-    background: linear-gradient(90deg, #1e0342, #3d1e6d);
+    background: linear-gradient(90deg, #7a1065, #96268e);
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
@@ -39,7 +39,7 @@ body {
 
 a {
     text-decoration: none;
-    background-color: #2e004f;
+    background-color: #9b1685;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -78,11 +78,11 @@ table {
     margin: 1em auto;
     width: 80%;
     border-collapse: collapse;
-    background: linear-gradient(to bottom right, #2e004f, #3d1e6d);
+    background: linear-gradient(to bottom right, #8b0c61, #b13182);
 }
 
 thead {
-    background: linear-gradient(to bottom right, #2e004f, #3d1e6d);
+    background: linear-gradient(to bottom right, #980b77, #bc37b7);
 }
 
 th {
@@ -102,7 +102,7 @@ td {
     border: 1px solid #ddd;
     text-align: center;
     color: #ffffff;
-    background: #5a2d8a;
+    background: #bf3ea7;
 }
 
 .weather-data {
@@ -134,7 +134,7 @@ button {
     display: block;
     margin: 40px auto;
     padding: 10px 20px;
-    background-color: #4e0980;
+    background-color: #cf41b1;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -147,7 +147,7 @@ button {
     margin: 0 auto;
     text-align: center;
     text-decoration: none;
-    background-color: #56088d;
+    background-color: #ce32b9;
     color: #fff;
     padding: 15px 30px;
     border: none;

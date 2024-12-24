@@ -11,12 +11,12 @@ use App\Models\Traffic;
 use App\Models\Maneuver;
 use App\Models\ExperienceManeuver;
 
-class DashboardController {
+class SummaryController {
     private function generateCode() {
         return bin2hex(random_bytes(8));
     }
 
-    public function index() {
+    public function get() {
         session_start();
         session_destroy();
         session_start();
@@ -41,6 +41,7 @@ class DashboardController {
         foreach ($experiences as $key => $experience) {
             $experienceCode = $this->generateCode();
             $_SESSION['experience_ids'][$experienceCode] = $experience['experience_id'];
+            $experiences[$key]['temp'] = $experience['experience_id'];
             $experiences[$key]['experience_id'] = $experienceCode;
 
             foreach (['weather_id', 'road_id', 'traffic_id', 'navigation_id'] as $field) {
@@ -84,5 +85,11 @@ class DashboardController {
         $experienceModel = new Experience();
         $experienceModel->resetExperiences();
         header('Location: /dashboard');
+    }
+    
+    public function addRandomData() {
+        $experienceModel = new Experience();
+        $experienceModel->addRandomData();
+        echo header('Location: /dashboard');
     }
 }

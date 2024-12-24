@@ -13,13 +13,13 @@
 
     <main>
         <div class="button-container">
-            <a href="/dashboard" class="button">Go to Dashboard</a>
-            <a href="/form" class="button">Add More Data</a>
+            <a href="/summary" class="button">Go to Dashboard</a>
+            <a href="/entry" class="button">Add More Data</a>
         </div>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2024 Skibidi Sigma</p>
+        <p>&copy; 2024 Skibidi Ayan</p>
     </footer>
 
 </body>

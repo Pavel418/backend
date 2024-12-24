@@ -35,7 +35,7 @@
                     </thead>
                     <tbody id="data-container">
                         <?php foreach ($experiences as $experience): ?>
-                            <tr data-id="<?= htmlspecialchars($experience['experience_id']) ?>">
+                            <tr data-id="<?= htmlspecialchars($experience['temp']) ?>">
                                 <td><?= htmlspecialchars($experience['date'] . ' ' . $experience['depart_time'] . ' - ' . $experience['arrival_time']) ?></td>
                                 <td><?= htmlspecialchars(getOptionName($weatherOptions, $experience, 'weather_id')) ?></td>
                                 <td><?= htmlspecialchars(getOptionName($roadTypeOptions, $experience, 'road_id')) ?></td>
@@ -43,10 +43,10 @@
                                 <td><?= htmlspecialchars(getOptionName($navigationTypeOptions, $experience, 'navigation_id')) ?></td>
                                 <td><?= htmlspecialchars(getOptionName($maneuvers, $experience, 'maneuver_id')) ?></td>
                                 <td>
-                                    <button class="edit-btn" data-id="<?= htmlspecialchars($experience['experience_id']) ?>">Edit</button>
+                                    <button class="edit-btn" data-id="<?= htmlspecialchars($experience['temp']) ?>">Edit</button>
                                 </td>
                                 <td>
-                                    <button class="delete-btn" data-id="<?= htmlspecialchars($experience['experience_id']) ?>">Delete</button>
+                                    <button class="delete-btn" data-id="<?= htmlspecialchars($experience['temp']) ?>">Delete</button>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

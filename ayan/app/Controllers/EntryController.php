@@ -11,8 +11,8 @@ use App\Models\Traffic;
 use App\Models\Navigation;
 use App\Models\Maneuver;
 
-class FormController {
-    public function index() {
+class EntryController {
+    public function get() {
         $weatherModel = new Weather();
         $weatherOptions = $weatherModel->getAllWeather();
 
@@ -43,7 +43,7 @@ class FormController {
         echo View::render('form', $data);
     }
 
-    public function store() {
+    public function post() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $date = $_POST['date'];
             $start_time = $_POST['start-time'];
@@ -75,7 +75,7 @@ class FormController {
         }
     }
 
-    public function edit($id) {
+    public function edit_get($id) {
         $experience = new Experience();
         $experienceData = $experience->getExperience($id);
 
@@ -119,36 +119,30 @@ class FormController {
         echo View::render('edit', $data);
     }
 
-    public function post_edit() {
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            $id = $_POST['id'];
-            $date = $_POST['date'];
-            $start_time = $_POST['start-time'];
-            $end_time = $_POST['end-time'];
-            $distance = $_POST['km'];
-            $navigation_id = $_POST['navigation-type'];
-            $weather_id = $_POST['weather-condition'];
-            $road_id = $_POST['road-type'];
-            $traffic_id = $_POST['traffic-type'];
-            $maneuvers = isset($_POST['maneuvers']) ? $_POST['maneuvers'] : [];
+    public function edit_post() {
+        $id = $_POST['id'];
+        $date = $_POST['date'];
+        $start_time = $_POST['start-time'];
+        $end_time = $_POST['end-time'];
+        $distance = $_POST['km'];
+        $navigation_id = $_POST['navigation-type'];
+        $weather_id = $_POST['weather-condition'];
+        $road_id = $_POST['road-type'];
+        $traffic_id = $_POST['traffic-type'];
+        $maneuvers = isset($_POST['maneuvers']) ? $_POST['maneuvers'] : [];
 
-            $experience = new Experience();
-            $experienceManeuver = new ExperienceManeuver();
+        $experience = new Experience();
+        $experienceManeuver = new ExperienceManeuver();
 
-            if ($experience->update($id, $date, $start_time, $end_time, $distance, $navigation_id, $road_id, $traffic_id, $weather_id)) {
-                $experienceManeuver->dissociateExperienceWithAllManeuvers($id);
+        if ($experience->update($id, $date, $start_time, $end_time, $distance, $navigation_id, $road_id, $traffic_id, $weather_id)) {
+            $experienceManeuver->dissociateExperienceWithAllManeuvers($id);
 
-                foreach ($maneuvers as $maneuver_id) {
-                    $experienceManeuver->associateExperienceWithManeuver($id, $maneuver_id);
-                }
-
-                $_SESSION['message'] = "Experience successfully updated and maneuvers associated!";
-            } else {
-                $_SESSION['message'] = "Failed to update experience. Please try again.";
+            foreach ($maneuvers as $maneuver_id) {
+                $experienceManeuver->associateExperienceWithManeuver($id, $maneuver_id);
             }
-
-            header('Location: /dashboard');
-            exit();
         }
+
+        header('Location: /dashboard');
+        exit();
     }
 }

@@ -20,7 +20,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2e004f;
+    background-color: #4f0048;
     background-image: url('../images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,14 +28,14 @@ body {
 }
 
 .header {
-    background: linear-gradient(90deg, #1e0342, #3d1e6d);
+    background: linear-gradient(90deg, #600549, #932b99);
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
 }
 
 .footer {
-    background: linear-gradient(90deg, #1e0342, #3d1e6d);
+    background: linear-gradient(90deg, #6a065b, #a12fa7);
     color: #ffffff;
     padding: 10px 0;
     text-align: center;
@@ -52,7 +52,7 @@ body {
     border-radius: 5px;
     max-width: 600px;
     width: 100%;
-    background-color: rgba(122, 59, 140, 0.5);
+    background-color: rgba(178, 71, 180, 0.5);
 }
 
 .form-label {
@@ -66,7 +66,7 @@ body {
     padding: 10px;
     border: 1px solid #151414;
     border-radius: 3px;
-    background-color: #7a3b8c;
+    background-color: #b84ca9;
     color: #fff;
 }
 
@@ -75,7 +75,7 @@ label {
 }
 
 .form-submit {
-    background-color: #2e004f;
+    background-color: #690261;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -93,7 +93,7 @@ label {
 
 a {
     text-decoration: none;
-    background-color: #2e004f;
+    background-color: #760467;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -131,7 +131,7 @@ button {
     display: block;
     margin: 40px auto;
     padding: 10px 20px;
-    background-color: #2e004f;
+    background-color: #730271;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -144,7 +144,7 @@ button {
     margin: 0 auto;
     text-align: center;
     text-decoration: none;
-    background-color: #2e004f;
+    background-color: #72046b;
     color: #fff;
     padding: 10px 20px;
     border: none;

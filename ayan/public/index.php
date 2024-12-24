@@ -1,13 +1,12 @@
 <?php
 
 use App\Core\Router;
-use App\Config\Config;
 
 require '../app/Core/Router.php';
-require '../app/Controllers/HomeController.php';
-require '../app/Controllers/ExperienceController.php';
-require '../app/Controllers/DashboardController.php';
-require '../app/Controllers/FormController.php';
+require '../app/Controllers/LandingController.php';
+require '../app/Controllers/EntryController.php';
+require '../app/Controllers/SummaryController.php';
+require '../app/Controllers/ApiController.php';
 require '../app/Core/View.php';
 require '../app/Core/Database.php';
 require '../app/Models/Experience.php';
@@ -20,25 +19,22 @@ require '../app/Models/Navigation.php';
 require '../app/Config/Config.php';
 
 $router = new Router();
-// Config::loadEnv('../.env');
 
-$router->get('/', 'HomeController@index');
-$router->get('/dashboard', 'DashboardController@index');
-$router->get('/form', 'FormController@index');
+$router->get('/', 'LandingController@get');
+$router->get('/summary', 'SummaryController@get');
+$router->get('/summary/reset', 'SummaryController@reset');
 
-$router->post('/form', 'FormController@store');
+$router->get('/entry', 'EntryController@get');
+$router->post('/entry', 'EntryController@post');
 
-$router->get('/dashboard/reset', 'DashboardController@reset');
+$router->get('/experience/edit', 'EntryController@edit_get');
+$router->post('/experience/edit', 'EntryController@edit_post');
+$router->get('/experience/random', 'ApiController@addRandomData');
 
-$router->get('/api/navigation', 'ExperienceController@getNavigationData');
-$router->get('/api/traffic', 'ExperienceController@getTrafficData');
-$router->get('/api/road', 'ExperienceController@getRoadData');
-$router->get('/api/distance', 'ExperienceController@getCumulativeDistanceData');
-
-$router->post('/api/experience/delete', 'ExperienceController@deleteExperience');
-
-$router->get('/experience/edit', 'FormController@edit');
-$router->post('/experience/edit', 'FormController@post_edit');
-$router->get('/experience/random', 'ExperienceController@addRandomData');
+$router->get('/api/navigation', 'ApiController@getNavigationData');
+$router->get('/api/traffic', 'ApiController@getTrafficData');
+$router->get('/api/road', 'ApiController@getRoadData');
+$router->get('/api/distance', 'ApiController@getCumulativeDistanceData');
+$router->post('/api/experience/delete', 'ApiController@deleteExperience');
 
 $router->dispatch($_SERVER['REQUEST_URI']);
