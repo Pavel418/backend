@@ -1,0 +1,139 @@
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e004f;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-position: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    background: linear-gradient(90deg, #1e0342, #3d1e6d);
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer {
+    background: linear-gradient(90deg, #1e0342, #3d1e6d);
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    background-color: #2e004f;
+    color: #fff;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 30px auto;
+    text-align: center;
+    border: 1px solid #000000;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2rem;
+}
+
+p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    display: block;
+    margin: 40px auto;
+    padding: 10px 20px;
+    background-color: #2e004f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #000000;
+    font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+    .header,
+    .footer {
+        padding: 15px 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    a {
+        padding: 15px 30px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    a {
+        padding: 18px 35px;
+    }
+
+    button {
+        padding: 12px 25px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    a {
+        padding: 20px 40px;
+    }
+
+    button {
+        padding: 15px 30px;
+    }
+
+    main {
+        padding: 20px;
+    }
+}

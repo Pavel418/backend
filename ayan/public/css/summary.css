@@ -1,0 +1,282 @@
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e004f;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff; 
+}
+
+.header {
+    background: linear-gradient(90deg, #1e0342, #3d1e6d);
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer {
+    background: linear-gradient(90deg, #1e0342, #3d1e6d);
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    background-color: #2e004f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid #000000;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+}
+
+h2 {
+    color: #fff;
+}
+
+p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+table {
+    margin: 1em auto;
+    width: 80%;
+    border-collapse: collapse;
+    background: linear-gradient(to bottom right, #2e004f, #3d1e6d);
+}
+
+thead {
+    background: linear-gradient(to bottom right, #2e004f, #3d1e6d);
+}
+
+th {
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5em 1em;
+    border: 1px solid #ddd;
+    color: #ffffff;
+}
+
+tbody {
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 0.5em 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #ffffff;
+    background: #5a2d8a;
+}
+
+.weather-data {
+    background: radial-gradient(circle at 50% 50%, rgba(255, 192, 203, 0.8) 0%, rgba(255, 136, 120, 0) 100%);
+}
+
+.road-type {
+    background: radial-gradient(ellipse at 50% 50%, rgba(255, 192, 203, 0.8) 0%, rgba(255, 225, 231, 0) 100%);
+}
+
+.traffic-type {
+    background: radial-gradient(circle at 50% 50%, rgba(250, 218, 217, 0.8) 0%, rgba(233, 115, 122, 0.1) 100%);
+}
+
+.navigation-type {
+    background: radial-gradient(circle at 50% 50%, rgba(255, 204, 179, 0.8) 0%, rgba(255, 185, 156, 0.2) 50%, rgba(255, 204, 179, 0.8) 70%, rgba(255, 185, 156, 0.2) 100%);
+}
+
+.maneuver-type {
+    background: radial-gradient(circle at 50% 50%, rgba(255, 192, 203, 0.8) 0%, rgba(255, 136, 120, 0) 100%);
+}
+
+#empty {
+    font-size: 20px;
+    padding: 15px 30px;
+}
+
+button {
+    display: block;
+    margin: 40px auto;
+    padding: 10px 20px;
+    background-color: #4e0980;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #000000;
+}
+
+.back-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    background-color: #56088d;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+.charts-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#distanceChart {
+    grid-column: 1 / -1;
+}
+
+.three-charts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.chart {
+    width: 100%;
+    height: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+
+    #experience-table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 20px;
+    }
+
+    table {
+        width: 100%;
+        table-layout: auto;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 0.5em;
+    }
+
+    th {
+        white-space: nowrap;
+    }
+
+    .charts-container {
+        display: block;
+        padding: 10px;
+    }
+
+    .three-charts {
+        grid-template-columns: 1fr;
+    }
+
+    .chart {
+        height: 200px;
+    }
+
+    #distanceChart {
+        height: 250px;
+    }
+
+    #empty, .back-button {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    p, h2 {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+    #experience-table-wrapper {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 90%;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 0.7em;
+    }
+
+    .charts-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .three-charts {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .chart {
+        height: 250px;
+    }
+
+    #distanceChart {
+        height: 250px;
+    }
+}
